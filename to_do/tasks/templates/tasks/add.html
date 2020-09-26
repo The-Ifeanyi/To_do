@@ -4,7 +4,7 @@
     <!-- <body> -->
         <h1>ADD TASKS</h1>
        
-        <form  action="{% url 'index' %}" method="POST">
+        <form  action="{% url 'add' %}" method="POST"> #replaced 'index' url with 'add'
             {%csrf_token%}
             {{form}}
             <input type="submit"></input>
